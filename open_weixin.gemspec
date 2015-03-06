@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = OpenWeixin::VERSION
   spec.authors       = ["Penfei Shi"]
   spec.email         = ["spfzzz@163.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Write a short summary. Required.}
+  spec.description   = %q{Write a longer description. Optional.}
+  spec.homepage      = "https://github.com/shipengfei/open_weixin"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
