@@ -17,7 +17,7 @@ module OpenWeixin
   	end
 
   	configure do |config|
-  		config.aes_key = ''
-  		config.appid = ''
+  		config.aes_key = 'wx06b191f90735f354'
+  		config.appid = '0c79e1fa963cd80cc0be99b20a18faeb'
   	end
 end
