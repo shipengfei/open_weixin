@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = OpenWeixin::VERSION
   spec.authors       = ["Penfei Shi"]
   spec.email         = ["spfzzz@163.com"]
-  spec.summary       = %q{Write a short summary. Required.}
-  spec.description   = %q{Write a longer description. Optional.}
+  spec.summary       = "summary"
+  spec.description   = "descriptions"
   spec.homepage      = "https://github.com/shipengfei/open_weixin"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = `git ls-files -z`.split("\x0").map { |e| e unless e.end_with? ".gem" }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
