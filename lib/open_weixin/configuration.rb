@@ -14,12 +14,14 @@ module OpenWeixin
   		include ActiveSupport::Configurable
   		config_accessor :aes_key
   		config_accessor :appid
+              config_accessor :appsecret
               config_accessor :redirect_uri
   	end
 
   	configure do |config|
   		config.aes_key = ''
   		config.appid = ''
+              config.appsecret = ''
               config.redirect_uri = ''
   	end
 end
