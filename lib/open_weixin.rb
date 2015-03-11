@@ -3,4 +3,12 @@ require "open_weixin/configuration"
 require "open_weixin/helpers/prpcrypt"
 module OpenWeixin
   # Your code goes here...
+  mattr_accessor :app_root
+
+  def self.setup
+  	yield self
+  end
+
 end
+
+require 'open_weixin/engine'

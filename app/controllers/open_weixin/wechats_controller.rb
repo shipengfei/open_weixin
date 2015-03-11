@@ -1,5 +1,5 @@
 # encoding: utf-8
-class OpenWeixins < ActionController::Base
+class OpenWeixin::WechatsController < ActionController::Base
 
 	def authorize_handler
 

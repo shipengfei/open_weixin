@@ -1,6 +1,9 @@
 # encoding: utf-8
 Rails.application.routes.draw do
-  resources :open_weixins do
-  	post :authorize_handler
-  end 
+
+	namespace :open_weixin do
+		resources :wechats, :only => [] do
+			post :authorize_handler
+		end
+	end
 end
